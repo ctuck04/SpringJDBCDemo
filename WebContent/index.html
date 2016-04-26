@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JDBCDemo</title>
+</head>
+<body>
+	
+	
+	<form action="GetEmployeeById.do" method="GET">
+		Id:        <input type="text" name="id" value=""/>
+		<input type="submit" value="Get Employee"/>
+	</form>
+	<p></p>
+	<form action="GetEmpByLastName.do" method="GET">
+		Last Name: <input type="text" name="input" value=""/>
+		<input type="submit" value="Get Employee By Last Name"/>
+	</form>
+	<br><br>
+	
+	<br>
+	<br>
+	
+	<form action="insertEmp.do" method="POST">
+		<table>
+			<tr>
+				<td>FirstName:</td><td><input type="text" name="firstName" value=""/></td>
+			</tr>
+			<tr>
+				<td>Last Name:</td><td><input type="text" name="lastName" value=""/></td>
+			</tr>
+			<tr>
+				<td>Department ID:</td><td><input type="text" name="deptId" value=""/></td>
+			</tr>
+			<tr>
+				<td>Job ID: </td><td><input type="text" name="jobId" value=""/></td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="Insert New Employee"/></td>
+			</tr>
+		</table>
+	</form>
+	<br><br><br>
+	<form action="deleteEmployee.jsp" method="POST">
+		<input type="submit" value="Delete Employee"/>
+	</form>
+	<br><br>
+	<form action="deleteEmployee.jsp" method="POST">
+		<input type="submit" value="Update Employee"/>
+	</form>
+</body>
+</html>
